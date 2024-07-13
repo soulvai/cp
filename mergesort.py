@@ -8,7 +8,9 @@ def merge_sort(arr,n):
             
             h=i+p
             mid=min((h+l)//2,n)
+            # this part main part i may forgot
             h=min(h,n)
+            # this part main part i may forgot
             print(l,mid,h,p)
             
             merge(arr,l,mid,h)
@@ -24,10 +26,11 @@ def merge_sort(arr,n):
 def merge(arr, left_start, mid, right_end):
     n1 = mid - left_start 
     n2 = right_end - mid
-
+    
     left = arr[left_start:mid]
     right = arr[mid:right_end]
-
+    # this technique is awsome
+    
 
     i, j, k = 0, 0, left_start
 
